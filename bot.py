@@ -6,20 +6,13 @@ from telegram.ext import (
     MessageHandler, filters, InlineQueryHandler
 )
 from config import BOT_TOKEN, LOG_CHANNEL
-from handlers.start import start_cmd, help_cmd
-from handlers.search import search_cmd, inline_query_handler
-from handlers.download import (
-    button_handler, quality_handler,
-    episode_handler, server_handler
-)
-from handlers.admin import (
-    broadcast_cmd, ban_cmd, unban_cmd,
-    restart_cmd, ping_cmd, stats_cmd,
-    add_admin_cmd, remove_admin_cmd, logs_cmd
-)
-from handlers.manage import manage_cmd
-from handlers.schedule import schedule_cmd, track_cmd, untrack_cmd
-from handlers.autodel import autodel_cmd
+from start import start_cmd, help_cmd
+from search import search_cmd, inline_query_handler
+from download import button_handler, quality_handler, episode_handler, server_handler
+from admin import broadcast_cmd, ban_cmd, unban_cmd
+from manage import manage_cmd
+from schedule import schedule_cmd, track_cmd, untrack_cmd
+from autodel import autodel_cmd
 from database.db import Database
 
 logging.basicConfig(
