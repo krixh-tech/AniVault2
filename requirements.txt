@@ -1,1 +1,5 @@
 python-telegram-bot
+aiohttp
+motor
+pymongo
+python-dotenv
