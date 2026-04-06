@@ -1,0 +1,8 @@
+python-telegram-bot[job-queue]==21.6
+motor==3.4.0
+pymongo==4.7.3
+aiohttp==3.9.5
+yt-dlp==2024.8.6
+pytz==2024.1
+python-dotenv==1.0.1
+Pillow==10.4.0
